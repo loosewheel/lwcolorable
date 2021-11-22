@@ -38,7 +38,7 @@ Copy the 'lwcolorable' folder to your mods folder.
 
 Bug Report
 ==========
-
+https://forum.minetest.net/viewtopic.php?f=9&t=27511
 
 
 Description
