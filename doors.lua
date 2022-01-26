@@ -262,7 +262,7 @@ minetest.register_craft( {
 
 
 register_door ("lwcolorable:door_glass", {
-	description = S("Colorable Glass Door"),
+	description = S("Colorable Door With Glass"),
 	tiles = { "lwcolorable_door_glass.png" },
 	wield_image = "lwcolorable_door_glass_item.png",
 	groups = { choppy = 2, oddly_breakable_by_hand = 2, flammable = 2 },
@@ -278,6 +278,30 @@ minetest.register_craft( {
 		{ "lwcolorable:wood", "default:glass" },
 		{ "lwcolorable:wood", "default:glass" },
 		{ "lwcolorable:wood", "lwcolorable:wood" },
+	},
+})
+
+
+
+
+
+register_door ("lwcolorable:glass_door", {
+	description = S("Colorable Glass Door"),
+	tiles = { "lwcolorable_glass_door.png" },
+	wield_image = "lwcolorable_glass_door_item.png",
+	groups = { choppy = 2, oddly_breakable_by_hand = 2, flammable = 2 },
+	use_texture_alpha = "blend",
+	sounds = default.node_sound_wood_defaults ()
+})
+
+
+
+minetest.register_craft( {
+	output = "lwcolorable:glass_door",
+	recipe = {
+		{ "lwcolorable:glass", "lwcolorable:glass" },
+		{ "lwcolorable:glass", "lwcolorable:glass" },
+		{ "lwcolorable:glass", "lwcolorable:glass" },
 	},
 })
 
