@@ -6,3 +6,9 @@ v 0.1.0
 v0.1.1
 *	Added glass door
 *	Added glass panels
+
+
+v0.1.2
+*	Added railings
+*	Fixed panel connection groups
+*	Removed mod storage creation.

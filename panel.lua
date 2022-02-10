@@ -37,7 +37,7 @@ local function register_panel (name, def)
 			connect_back =  { -1/16, -1/2,  1/16,  1/16, 1/2 + fence_collision_extra,  1/2 },
 			connect_right = {  1/16, -1/2, -1/16,  1/2, 1/2 + fence_collision_extra,  1/16 }
 		},
-		connects_to = { "group:fence", "group:stone", "group:tree", "group:wall" },
+		connects_to = { "group:stone", "group:tree", "group:wood", "group:glass" },
 		sunlight_propagates = true,
 		is_ground_content = false,
 		groups = { },
@@ -50,7 +50,7 @@ local function register_panel (name, def)
 	end
 
 	-- Always add to the wall group, even if no group provided
-	def.groups.wall = 1
+	def.groups.glass = 1
 
 	minetest.register_node (name, def)
 

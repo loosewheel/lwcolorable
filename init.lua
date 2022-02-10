@@ -1,5 +1,4 @@
-local version = "0.1.1"
-local mod_storage = minetest.get_mod_storage ()
+local version = "0.1.2"
 
 
 
@@ -22,6 +21,7 @@ loadfile (modpath.."/stone.lua") (utils)
 loadfile (modpath.."/wool.lua") (utils)
 loadfile (modpath.."/doors.lua") (utils)
 loadfile (modpath.."/wall.lua") (utils)
+loadfile (modpath.."/railing.lua") (utils)
 loadfile (modpath.."/glass.lua") (utils)
 loadfile (modpath.."/panel.lua") (utils)
 loadfile (modpath.."/gate.lua") (utils)

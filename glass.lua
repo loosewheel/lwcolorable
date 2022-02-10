@@ -17,7 +17,7 @@ minetest.register_node("lwcolorable:glass", {
 	paramtype = "light",
 	sunlight_propagates = true,
 	is_ground_content = false,
-	groups = { node = 1, cracky = 3, oddly_breakable_by_hand = 3, ud_param2_colorable = 1 },
+	groups = { node = 1, cracky = 3, glass = 1, oddly_breakable_by_hand = 3, ud_param2_colorable = 1 },
 	sounds = default.node_sound_glass_defaults (),
 	paramtype2 = "color",
 	palette = "unifieddyes_palette_extended.png",
@@ -61,12 +61,15 @@ minetest.register_node("lwcolorable:stained_glass", {
 		}
 	},
 	use_texture_alpha = "blend",
-	wield_image = "lwcolorable_stained_glass_item.png",
-	inventory_image = "lwcolorable_stained_glass_item.png",
+	inventory_image = minetest.inventorycube (
+		"lwcolorable_stained_glass_item.png",
+		"lwcolorable_stained_glass_item.png",
+		"lwcolorable_stained_glass_item.png"
+	),
 	paramtype = "light",
 	sunlight_propagates = true,
 	is_ground_content = false,
-	groups = { node = 1, cracky = 3, oddly_breakable_by_hand = 3, ud_param2_colorable = 1 },
+	groups = { node = 1, cracky = 3, glass = 1, oddly_breakable_by_hand = 3, ud_param2_colorable = 1 },
 	sounds = default.node_sound_glass_defaults (),
 	paramtype2 = "color",
 	palette = "unifieddyes_palette_extended.png",
@@ -109,12 +112,15 @@ minetest.register_node("lwcolorable:stained_glass_framed", {
 		}
 	},
 	use_texture_alpha = "blend",
-	wield_image = "lwcolorable_stained_glass_framed_item.png",
-	inventory_image = "lwcolorable_stained_glass_framed_item.png",
+	inventory_image = minetest.inventorycube (
+		"lwcolorable_stained_glass_framed_item.png",
+		"lwcolorable_stained_glass_framed_item.png",
+		"lwcolorable_stained_glass_framed_item.png"
+	),
 	paramtype = "light",
 	sunlight_propagates = true,
 	is_ground_content = false,
-	groups = { node = 1, cracky = 3, oddly_breakable_by_hand = 3, ud_param2_colorable = 1 },
+	groups = { node = 1, cracky = 3, glass = 1, oddly_breakable_by_hand = 3, ud_param2_colorable = 1 },
 	sounds = default.node_sound_glass_defaults (),
 	paramtype2 = "color",
 	palette = "unifieddyes_palette_extended.png",
@@ -143,10 +149,6 @@ minetest.register_craft ( {
 		{ "lwcolorable:stained_glass"},
 	},
 })
-
-
-
-
 
 
 
