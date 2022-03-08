@@ -23,7 +23,7 @@ function utils.is_creative (player)
 
 	if player and player:is_player () then
 		return minetest.is_creative_enabled (player:get_player_name ()) or
-				 minetest.check_player_privs (placer, "creative")
+				 minetest.check_player_privs (player, "creative")
 	end
 
 	return false
@@ -125,7 +125,7 @@ function utils.wear_tool (node, player)
 			local tool_def = minetest.registered_items[tool:get_name ()]
 
 			if tool_def then
-				dig_params =
+				local dig_params =
 					minetest.get_dig_params (node_def.groups,
 													 tool_def.tool_capabilities)
 

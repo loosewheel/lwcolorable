@@ -64,7 +64,7 @@ local function on_place (itemstack, placer, pointed_thing)
 			meta:set_string ("base", base)
 		end
 
-		if not utils.is_creative (player) then
+		if not utils.is_creative (placer) then
 			itemstack:set_count (itemstack:get_count () - 1)
 		end
 	end
