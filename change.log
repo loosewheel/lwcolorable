@@ -23,3 +23,7 @@ v0.1.4
 *	Fixed lighting on slabs and stairs.
 *	Added tiles.
 *	Added lights (lights are not colorable).
+
+
+v0.1.5
+*	Re-fix lighting.
