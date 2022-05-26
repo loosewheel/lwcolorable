@@ -206,6 +206,7 @@ register_stairs ("lwcolorable:wood_stairs", {
 	groups = { choppy = 2, oddly_breakable_by_hand = 2,
 				  flammable = 2, wood = 1 },
 	sounds = default.node_sound_wood_defaults(),
+	paramtype = "light",
 })
 
 
@@ -217,6 +218,7 @@ register_stairs ("lwcolorable:boards_stairs", {
 	groups = { choppy = 2, oddly_breakable_by_hand = 2,
 				  flammable = 2, wood = 1 },
 	sounds = default.node_sound_wood_defaults(),
+	paramtype = "light",
 })
 
 
@@ -228,6 +230,7 @@ register_stairs ("lwcolorable:parquet_stairs", {
 	groups = { choppy = 2, oddly_breakable_by_hand = 2,
 				  flammable = 2, wood = 1 },
 	sounds = default.node_sound_wood_defaults(),
+	paramtype = "light",
 })
 
 
@@ -239,6 +242,7 @@ register_stairs ("lwcolorable:tree_stairs", {
 	groups = { tree = 1, choppy = 2, oddly_breakable_by_hand = 1,
 				  flammable = 2 },
 	sounds = default.node_sound_wood_defaults(),
+	paramtype = "light",
 })
 
 
@@ -250,6 +254,7 @@ register_stairs ("lwcolorable:plaster_stairs", {
 	groups = { choppy = 3, oddly_breakable_by_hand = 1,
 				  flammable = 2 },
 	sounds = default.node_sound_wood_defaults(),
+	paramtype = "light",
 })
 
 
@@ -260,6 +265,7 @@ register_stairs ("lwcolorable:stone_stairs", {
 	material = "lwcolorable:stone",
 	groups = { cracky = 3, stone = 1 },
 	sounds = default.node_sound_stone_defaults(),
+	paramtype = "light",
 })
 
 
@@ -270,6 +276,7 @@ register_stairs ("lwcolorable:stone_block_stairs", {
 	material = "lwcolorable:stone_block",
 	groups = { cracky = 3, stone = 1 },
 	sounds = default.node_sound_stone_defaults(),
+	paramtype = "light",
 })
 
 
@@ -280,6 +287,7 @@ register_stairs ("lwcolorable:stone_brick_stairs", {
 	material = "lwcolorable:stone_brick",
 	groups = { cracky = 3, stone = 1 },
 	sounds = default.node_sound_stone_defaults(),
+	paramtype = "light",
 })
 
 
@@ -290,6 +298,7 @@ register_stairs ("lwcolorable:stone_tile_stairs", {
 	material = "lwcolorable:stone_tile",
 	groups = { cracky = 3, stone = 1 },
 	sounds = default.node_sound_stone_defaults(),
+	paramtype = "light",
 })
 
 
@@ -300,6 +309,7 @@ register_stairs ("lwcolorable:cobble_stairs", {
 	material = "lwcolorable:cobble",
 	groups = { cracky = 3, stone = 2 },
 	sounds = default.node_sound_stone_defaults(),
+	paramtype = "light",
 })
 
 
@@ -311,6 +321,7 @@ register_stairs ("lwcolorable:brick_stairs", {
 	material = "lwcolorable:brick",
 	groups = { cracky = 3, stone = 1 },
 	sounds = default.node_sound_stone_defaults(),
+	paramtype = "light",
 })
 
 
@@ -322,6 +333,95 @@ register_stairs ("lwcolorable:brick_light_stairs", {
 	material = "lwcolorable:brick_light",
 	groups = { cracky = 3, stone = 1 },
 	sounds = default.node_sound_stone_defaults(),
+	paramtype = "light",
+})
+
+
+
+register_stairs ("lwcolorable:tile_light_stairs", {
+	description = S("Colorable Light Tiles Stairs"),
+	tiles = { "lwcolorable_tile_light.png" },
+	material = "lwcolorable:tile_light",
+	groups = { cracky = 3, stone = 1 },
+	sounds = default.node_sound_stone_defaults(),
+	paramtype = "light",
+})
+
+
+
+register_stairs ("lwcolorable:tile_dark_stairs", {
+	description = S("Colorable Dark Tiles Stairs"),
+	tiles = { "lwcolorable_tile_dark.png" },
+	material = "lwcolorable:tile_dark",
+	groups = { cracky = 3, stone = 1 },
+	sounds = default.node_sound_stone_defaults(),
+	paramtype = "light",
+})
+
+
+
+register_stairs ("lwcolorable:tile_light_small_stairs", {
+	description = S("Colorable Small Light Tiles Stairs"),
+	tiles = { "lwcolorable_tile_light_small.png" },
+	material = "lwcolorable:tile_light_small",
+	groups = { cracky = 3, stone = 1 },
+	sounds = default.node_sound_stone_defaults(),
+	paramtype = "light",
+})
+
+
+
+register_stairs ("lwcolorable:tile_dark_small_stairs", {
+	description = S("Colorable Small Dark Tiles Stairs"),
+	tiles = { "lwcolorable_tile_dark_small.png" },
+	material = "lwcolorable:tile_dark_small",
+	groups = { cracky = 3, stone = 1 },
+	sounds = default.node_sound_stone_defaults(),
+	paramtype = "light",
+})
+
+
+
+register_stairs ("lwcolorable:tile_check_stairs", {
+	description = S("Colorable Check Tiles Stairs"),
+	tiles = { "lwcolorable_tile_check.png" },
+	material = "lwcolorable:tile_check",
+	groups = { cracky = 3, stone = 1 },
+	sounds = default.node_sound_stone_defaults(),
+	paramtype = "light",
+})
+
+
+
+register_stairs ("lwcolorable:tile_cross_stairs", {
+	description = S("Colorable Cross Tiles Stairs"),
+	tiles = { "lwcolorable_tile_cross.png" },
+	material = "lwcolorable:tile_cross",
+	groups = { cracky = 3, stone = 1 },
+	sounds = default.node_sound_stone_defaults(),
+	paramtype = "light",
+})
+
+
+
+register_stairs ("lwcolorable:tile_check_white_stairs", {
+	description = S("Colorable Check Tiles White Stairs"),
+	tiles = { "lwcolorable_tile_check.png" },
+	material = "lwcolorable:tile_check_white",
+	groups = { cracky = 3, stone = 1 },
+	sounds = default.node_sound_stone_defaults(),
+	paramtype = "light",
+})
+
+
+
+register_stairs ("lwcolorable:tile_cross_white_stairs", {
+	description = S("Colorable Cross Tiles White Stairs"),
+	tiles = { "lwcolorable_tile_cross.png" },
+	material = "lwcolorable:tile_cross_white",
+	groups = { cracky = 3, stone = 1 },
+	sounds = default.node_sound_stone_defaults(),
+	paramtype = "light",
 })
 
 

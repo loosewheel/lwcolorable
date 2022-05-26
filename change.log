@@ -17,3 +17,9 @@ v0.1.2
 v0.1.3
 *	Fixed creative mode check on placement.
 *	Bug fixes.
+
+
+v0.1.4
+*	Fixed lighting on slabs and stairs.
+*	Added tiles.
+*	Added lights (lights are not colorable).

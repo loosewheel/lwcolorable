@@ -194,6 +194,7 @@ register_slabs ("lwcolorable:wood_slab", {
 	groups = { choppy = 2, oddly_breakable_by_hand = 2,
 				  flammable = 2, wood = 1 },
 	sounds = default.node_sound_wood_defaults(),
+	paramtype = "light",
 })
 
 
@@ -205,6 +206,7 @@ register_slabs ("lwcolorable:boards_slab", {
 	groups = { choppy = 2, oddly_breakable_by_hand = 2,
 				  flammable = 2, wood = 1 },
 	sounds = default.node_sound_wood_defaults(),
+	paramtype = "light",
 })
 
 
@@ -216,6 +218,7 @@ register_slabs ("lwcolorable:parquet_slab", {
 	groups = { choppy = 2, oddly_breakable_by_hand = 2,
 				  flammable = 2, wood = 1 },
 	sounds = default.node_sound_wood_defaults(),
+	paramtype = "light",
 })
 
 
@@ -227,6 +230,7 @@ register_slabs ("lwcolorable:tree_slab", {
 	groups = { tree = 1, choppy = 2, oddly_breakable_by_hand = 1,
 				  flammable = 2 },
 	sounds = default.node_sound_wood_defaults(),
+	paramtype = "light",
 })
 
 
@@ -238,6 +242,7 @@ register_slabs ("lwcolorable:plaster_slab", {
 	groups = { choppy = 3, oddly_breakable_by_hand = 1,
 				  flammable = 2 },
 	sounds = default.node_sound_wood_defaults(),
+	paramtype = "light",
 })
 
 
@@ -248,6 +253,7 @@ register_slabs ("lwcolorable:stone_slab", {
 	material = "lwcolorable:stone",
 	groups = { cracky = 3, stone = 1 },
 	sounds = default.node_sound_stone_defaults(),
+	paramtype = "light",
 })
 
 
@@ -258,6 +264,7 @@ register_slabs ("lwcolorable:stone_block_slab", {
 	material = "lwcolorable:stone_block",
 	groups = { cracky = 3, stone = 1 },
 	sounds = default.node_sound_stone_defaults(),
+	paramtype = "light",
 })
 
 
@@ -268,6 +275,7 @@ register_slabs ("lwcolorable:stone_brick_slab", {
 	material = "lwcolorable:stone_brick",
 	groups = { cracky = 3, stone = 1 },
 	sounds = default.node_sound_stone_defaults(),
+	paramtype = "light",
 })
 
 
@@ -278,6 +286,7 @@ register_slabs ("lwcolorable:stone_tile_slab", {
 	material = "lwcolorable:stone_tile",
 	groups = { cracky = 3, stone = 1 },
 	sounds = default.node_sound_stone_defaults(),
+	paramtype = "light",
 })
 
 
@@ -288,6 +297,7 @@ register_slabs ("lwcolorable:cobble_slab", {
 	material = "lwcolorable:cobble",
 	groups = { cracky = 3, stone = 2 },
 	sounds = default.node_sound_stone_defaults(),
+	paramtype = "light",
 })
 
 
@@ -299,6 +309,7 @@ register_slabs ("lwcolorable:brick_slab", {
 	material = "lwcolorable:brick",
 	groups = { cracky = 3, stone = 1 },
 	sounds = default.node_sound_stone_defaults(),
+	paramtype = "light",
 })
 
 
@@ -310,6 +321,95 @@ register_slabs ("lwcolorable:brick_light_slab", {
 	material = "lwcolorable:brick_light",
 	groups = { cracky = 3, stone = 1 },
 	sounds = default.node_sound_stone_defaults(),
+	paramtype = "light",
+})
+
+
+
+register_slabs ("lwcolorable:tile_light_slab", {
+	description = S("Colorable Light Tiles Slab"),
+	tiles = { "lwcolorable_tile_light.png" },
+	material = "lwcolorable:tile_light",
+	groups = { cracky = 3, stone = 1 },
+	sounds = default.node_sound_stone_defaults(),
+	paramtype = "light",
+})
+
+
+
+register_slabs ("lwcolorable:tile_dark_slab", {
+	description = S("Colorable Dark Tiles Slab"),
+	tiles = { "lwcolorable_tile_dark.png" },
+	material = "lwcolorable:tile_dark",
+	groups = { cracky = 3, stone = 1 },
+	sounds = default.node_sound_stone_defaults(),
+	paramtype = "light",
+})
+
+
+
+register_slabs ("lwcolorable:tile_light_small_slab", {
+	description = S("Colorable Small Light Tiles Slab"),
+	tiles = { "lwcolorable_tile_light_small.png" },
+	material = "lwcolorable:tile_light_small",
+	groups = { cracky = 3, stone = 1 },
+	sounds = default.node_sound_stone_defaults(),
+	paramtype = "light",
+})
+
+
+
+register_slabs ("lwcolorable:tile_dark_small_slab", {
+	description = S("Colorable Small Dark Tiles Slab"),
+	tiles = { "lwcolorable_tile_dark_small.png" },
+	material = "lwcolorable:tile_dark_small",
+	groups = { cracky = 3, stone = 1 },
+	sounds = default.node_sound_stone_defaults(),
+	paramtype = "light",
+})
+
+
+
+register_slabs ("lwcolorable:tile_check_slab", {
+	description = S("Colorable Check Tiles Slab"),
+	tiles = { "lwcolorable_tile_check.png" },
+	material = "lwcolorable:tile_check",
+	groups = { cracky = 3, stone = 1 },
+	sounds = default.node_sound_stone_defaults(),
+	paramtype = "light",
+})
+
+
+
+register_slabs ("lwcolorable:tile_cross_slab", {
+	description = S("Colorable Cross Tiles Slab"),
+	tiles = { "lwcolorable_tile_cross.png" },
+	material = "lwcolorable:tile_cross",
+	groups = { cracky = 3, stone = 1 },
+	sounds = default.node_sound_stone_defaults(),
+	paramtype = "light",
+})
+
+
+
+register_slabs ("lwcolorable:tile_check_white_slab", {
+	description = S("Colorable Check Tiles White Slab"),
+	tiles = { "lwcolorable_tile_check.png" },
+	material = "lwcolorable:tile_check_white",
+	groups = { cracky = 3, stone = 1 },
+	sounds = default.node_sound_stone_defaults(),
+	paramtype = "light",
+})
+
+
+
+register_slabs ("lwcolorable:tile_cross_white_slab", {
+	description = S("Colorable Cross Tiles White Slab"),
+	tiles = { "lwcolorable_tile_cross.png" },
+	material = "lwcolorable:tile_cross_white",
+	groups = { cracky = 3, stone = 1 },
+	sounds = default.node_sound_stone_defaults(),
+	paramtype = "light",
 })
 
 

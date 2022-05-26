@@ -13,7 +13,7 @@ CC BY-SA 3.0
 
 Version
 =======
-0.1.3
+0.1.4
 
 
 Minetest Version
@@ -44,6 +44,7 @@ https://forum.minetest.net/viewtopic.php?f=9&t=27511
 Description
 ===========
 Various textured decorative blocks that can be colored with the air brush.
+Some lights are also included but cannot be colored.
 
 
 ------------------------------------------------------------------------
