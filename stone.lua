@@ -376,7 +376,7 @@ default.register_fence ("lwcolorable:fence_stone", {
 	palette = "unifieddyes_palette_extended.png",
 	on_construct = unifieddyes.on_construct,
 	on_dig = unifieddyes.on_dig,
-	sounds = default.node_sound_wood_defaults()
+	sounds = default.node_sound_stone_defaults()
 })
 
 
@@ -410,7 +410,7 @@ default.register_fence_rail ("lwcolorable:fence_rail_stone", {
 	palette = "unifieddyes_palette_extended.png",
 	on_construct = unifieddyes.on_construct,
 	on_dig = unifieddyes.on_dig,
-	sounds = default.node_sound_wood_defaults()
+	sounds = default.node_sound_stone_defaults()
 })
 
 

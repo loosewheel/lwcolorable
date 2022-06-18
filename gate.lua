@@ -130,7 +130,7 @@ local function on_dig (pos, node, digger)
 end
 
 
-local fence_collision_extra = minetest.settings:get_bool("enable_fence_tall") and 3/8 or 0
+local fence_collision_extra = minetest.settings:get_bool ("enable_fence_tall") and 3/8 or 0
 
 
 local function register_gate (name, def)
@@ -332,6 +332,50 @@ minetest.register_craft( {
 	recipe = {
 		{ "default:stick", "lwcolorable:wood", "default:stick" },
 		{ "default:stick", "lwcolorable:wood", "default:stick" }
+	},
+})
+
+
+
+
+
+register_gate ("lwcolorable:gate_plain", {
+	description = S("Colorable Plain Gate"),
+	tiles = { "lwcolorable_white.png" },
+	wield_image = "lwcolorable_gate_plain_item.png",
+	groups = { cracky = 2, oddly_breakable_by_hand = 2, flammable = 2 },
+	sounds = default.node_sound_wood_defaults ()
+})
+
+
+
+minetest.register_craft( {
+	output = "lwcolorable:gate_plain",
+	recipe = {
+		{ "default:stick", "lwcolorable:boards", "default:stick" },
+		{ "default:stick", "lwcolorable:boards", "default:stick" }
+	},
+})
+
+
+
+
+
+register_gate ("lwcolorable:gate_tree", {
+	description = S("Colorable Tree Gate"),
+	tiles = { "lwcolorable_tree.png" },
+	wield_image = "lwcolorable_gate_tree_item.png",
+	groups = { cracky = 2, oddly_breakable_by_hand = 2, flammable = 2 },
+	sounds = default.node_sound_wood_defaults ()
+})
+
+
+
+minetest.register_craft( {
+	output = "lwcolorable:gate_tree",
+	recipe = {
+		{ "default:stick", "lwcolorable:tree", "default:stick" },
+		{ "default:stick", "lwcolorable:tree", "default:stick" }
 	},
 })
 

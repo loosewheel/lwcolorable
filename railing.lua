@@ -6,7 +6,7 @@ local S = utils.S
 --
 -- Railing registration helper
 --
-local fence_collision_extra = minetest.settings:get_bool("enable_fence_tall") and 3/8 or 0
+local fence_collision_extra = minetest.settings:get_bool ("enable_fence_tall") and 3/8 or 0
 
 local function register_railing (name, def)
 	local texture = def.texture

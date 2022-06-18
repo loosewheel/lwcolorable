@@ -6,7 +6,7 @@ local S = utils.S
 --
 -- Wall registration helper
 --
-local fence_collision_extra = minetest.settings:get_bool("enable_fence_tall") and 3/8 or 0
+local fence_collision_extra = minetest.settings:get_bool ("enable_fence_tall") and 3/8 or 0
 
 local function register_panel (name, def)
 	local material = def.material

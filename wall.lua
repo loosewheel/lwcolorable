@@ -6,7 +6,7 @@ local S = utils.S
 --
 -- Wall registration helper
 --
-local fence_collision_extra = minetest.settings:get_bool("enable_fence_tall") and 3/8 or 0
+local fence_collision_extra = minetest.settings:get_bool ("enable_fence_tall") and 3/8 or 0
 
 local function register_wall (name, def)
 	local texture = def.texture
@@ -96,7 +96,7 @@ register_wall ("lwcolorable:wall_stone", {
 	palette = "unifieddyes_palette_extended.png",
 	on_construct = unifieddyes.on_construct,
 	on_dig = unifieddyes.on_dig,
-	sounds = default.node_sound_wood_defaults()
+	sounds = default.node_sound_stone_defaults()
 })
 
 
@@ -138,7 +138,7 @@ register_wall ("lwcolorable:wall_cobble", {
 	palette = "unifieddyes_palette_extended.png",
 	on_construct = unifieddyes.on_construct,
 	on_dig = unifieddyes.on_dig,
-	sounds = default.node_sound_wood_defaults()
+	sounds = default.node_sound_stone_defaults()
 })
 
 

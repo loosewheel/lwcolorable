@@ -1,4 +1,4 @@
-local version = "0.1.5"
+local version = "0.1.6"
 
 
 
@@ -29,6 +29,7 @@ loadfile (modpath.."/gate.lua") (utils)
 loadfile (modpath.."/stairs.lua") (utils)
 loadfile (modpath.."/slabs.lua") (utils)
 loadfile (modpath.."/lights.lua") (utils)
+loadfile (modpath.."/fence.lua") (utils)
 
 
 
